@@ -33,9 +33,12 @@ function getAvailableCars(carsArr){
 }
 
 // loading car images to the page
+function viewImages(cars){
+  var availableCars = getAvailableCars(cars);
+  $.each(availableCars,function(index, car){
+    $('#cars-imgs').append('<div class="car-img-info"><img src="' + car.image + '" /><a href="#">' + car.type + '</a></div>');
+  });
+}
 
-var availableCars = getAvailableCars(cars);
-$.each(availableCars,function(index, car){
-  $('#cars-imgs').append('<div class="car-img-info"><img src="' + car.image + '" /><a href="#">' + car.type + '</a></div>');
-});
+viewImages(cars);
 
