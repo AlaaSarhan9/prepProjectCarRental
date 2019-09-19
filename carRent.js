@@ -1,5 +1,5 @@
 // creating our class
-function Car(type, color, speed, image, madeDate, addDate){
+function Car(type, color, speed, image, price, madeDate, addDate){
    var car = {};
    car.type = type;
    car.color = color;
@@ -7,6 +7,7 @@ function Car(type, color, speed, image, madeDate, addDate){
    car.madeDate = madeDate;
    car.addDate = addDate;
    car.image = image;
+   car.price = price;
    car.rented = 0; // 1 means rented, 0 not rented
    car.setRent = setRent; // change the value of rented;
    return car;
