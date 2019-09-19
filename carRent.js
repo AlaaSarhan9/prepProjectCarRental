@@ -1,3 +1,4 @@
+
 // creating our class
 function Car(type, color, speed, image, price, madeDate, addDate){
    var car = {};
