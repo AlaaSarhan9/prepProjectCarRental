@@ -1,3 +1,4 @@
+
 // creating our class
 function Car(type, color, speed, image, madeDate, addDate){
    var car = {};
@@ -41,4 +42,5 @@ function viewImages(cars){
 }
 
 viewImages(cars);
+
 
